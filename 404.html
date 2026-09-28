@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | CloudKitchen — Virtual Restaurant Platform</title>
+
+    <!-- Favicon — CloudKitchen chef toque & cloud mark -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect x='6' y='6' width='88' height='88' rx='28' fill='%23D96C3A'/%3E%3Cpath d='M34 50 C30 50 28 44 32 40 C34 36 40 35 43 38 C46 32 54 30 59 34 C63 31 71 33 73 38 C77 38 79 43 77 47 C79 50 77 54 73 54 H34 Z' fill='%23FFFFFF'/%3E%3Cpath d='M35 56 H65 V63 C65 65.2 63.2 67 61 67 H39 C36.8 67 35 65.2 35 63 V56 Z' fill='%23FFFFFF'/%3E%3Cpath d='M50 44 C46 51 46 56 50 61 C54 56 54 51 50 44 Z' fill='%23BF5A2E'/%3E%3C/svg%3E" />
+    <link rel="shortcut icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect x='6' y='6' width='88' height='88' rx='28' fill='%23D96C3A'/%3E%3Cpath d='M34 50 C30 50 28 44 32 40 C34 36 40 35 43 38 C46 32 54 30 59 34 C63 31 71 33 73 38 C77 38 79 43 77 47 C79 50 77 54 73 54 H34 Z' fill='%23FFFFFF'/%3E%3Cpath d='M35 56 H65 V63 C65 65.2 63.2 67 61 67 H39 C36.8 67 35 65.2 35 63 V56 Z' fill='%23FFFFFF'/%3E%3Cpath d='M50 44 C46 51 46 56 50 61 C54 56 54 51 50 44 Z' fill='%23BF5A2E'/%3E%3C/svg%3E" />
+
+    <meta name="description" content="Oops! That page doesn't exist or has been moved. Let's get you back to building your food brand.">
+
+    <!-- Tailwind CSS -->
+    <script src="tailwind.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D96C3A',
+                        primaryLight: '#E88A5E',
+                        primaryDark: '#BF5A2E',
+                        accent: '#F5A623',
+                        accentDark: '#D48A1E',
+                        cream: '#FCF8F5',
+                        darkBg: '#1A1614',
+                        darkCard: '#2A2420',
+                        textDark: '#1E1A17',
+                        textLight: '#EDE6E0',
+                        gold: '#D4A373',
+                    },
+                    fontFamily: {
+                        'display': ['"Playfair Display"', 'serif'],
+                        'body': ['"Inter"', 'system-ui', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'warm-pattern': 'radial-gradient(circle at 30% 40%, rgba(217, 108, 58, 0.08) 0%, transparent 70%)',
+                    },
+                    animation: {
+                        'spin-slow': 'spinSlow 10s linear infinite',
+                        'float-gentle': 'floatGentle 4s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.5s ease-out',
+                        'pulse-gentle': 'pulseGentle 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        spinSlow: {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                        floatGentle: {
+                            '0%,100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-8px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        pulseGentle: {
+                            '0%,100%': { opacity: '0.7' },
+                            '50%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts: Playfair Display + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #FCF8F5;
+            font-family: 'Inter', system-ui, sans-serif;
+            color: #1E1A17;
+            line-height: 1.6;
+        }
+
+        .dark body {
+            background-color: #1A1614;
+            color: #EDE6E0;
+        }
+
+        /* Dark mode fallback text contrast overrides */
+        .dark .text-\[\#1E1A17\] {
+            color: #EDE6E0;
+        }
+        .dark input,
+        .dark select,
+        .dark textarea {
+            color: #FFFFFF !important;
+        }
+
+        /* Toggle Buttons */
+        .toggle-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(217, 108, 58, 0.15);
+            color: #D96C3A;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .dark .toggle-btn {
+            background: rgba(217, 108, 58, 0.2);
+            color: #E88A5E;
+        }
+
+        .toggle-btn:hover {
+            transform: scale(1.1);
+            background: #D96C3A;
+            color: #FCF8F5;
+        }
+
+        .dark .toggle-btn:hover {
+            background: #D96C3A;
+            color: #FCF8F5;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background: #D96C3A;
+            color: #FCF8F5;
+            padding: 0.85rem 2rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 12px rgba(217, 108, 58, 0.35);
+        }
+
+        .btn-primary:hover {
+            background: #BF5A2E;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(217, 108, 58, 0.45);
+        }
+
+        .btn-secondary {
+            border: 1.5px solid #D96C3A;
+            background: transparent;
+            color: #D96C3A;
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .dark .btn-secondary {
+            color: #E88A5E;
+            border-color: #E88A5E;
+        }
+
+        .btn-secondary:hover {
+            background: #D96C3A;
+            color: #FCF8F5;
+            transform: translateY(-2px);
+        }
+
+        .dark .btn-secondary:hover {
+            background: #D96C3A;
+            color: #FCF8F5;
+        }
+
+        /* Accent line */
+        .scoop-line {
+            width: 70px;
+            height: 3px;
+            background: #D96C3A;
+            margin: 1rem auto;
+            border-radius: 3px;
+        }
+
+        /* Animated element */
+        .floating-scoop {
+            animation: floatGentle 4s ease-in-out infinite;
+        }
+
+        /* RTL Fixes */
+        [dir="rtl"] .space-x-3> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 1;
+            margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+            margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+        }
+
+        [dir="rtl"] .ml-8 {
+            margin-left: 0;
+            margin-right: 2rem;
+        }
+
+        [dir="rtl"] .mr-2 {
+            margin-right: 0;
+            margin-left: 0.5rem;
+        }
+
+        [dir="rtl"] .scoop-line {
+            margin: 1rem auto;
+        }
+    </style>
+</head>
+
+<body class="bg-cream dark:bg-[#1A1614] warm-pattern">
+
+    <!-- ========== HEADER ========== -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-[#1A1614]/95 backdrop-blur-md border-b border-cream dark:border-primary/20 shadow-sm">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-between h-24 md:h-24 py-3 md:py-0">
+                <!-- Logo -->
+                <a href="index.html" class='flex items-center gap-2 md:gap-3 group shrink-0'>
+                    <svg class="w-10 h-10 group-hover:scale-105 transition-transform duration-300 shrink-0 shadow-sm rounded-[14px]" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="6" y="6" width="88" height="88" rx="28" fill="#D96C3A"/>
+                        <path d="M34 50 C30 50 28 44 32 40 C34 36 40 35 43 38 C46 32 54 30 59 34 C63 31 71 33 73 38 C77 38 79 43 77 47 C79 50 77 54 73 54 H34 Z" fill="#FFFFFF"/>
+                        <path d="M35 56 H65 V63 C65 65.2 63.2 67 61 67 H39 C36.8 67 35 65.2 35 63 V56 Z" fill="#FFFFFF"/>
+                        <path d="M50 44 C46 51 46 56 50 61 C54 56 54 51 50 44 Z" fill="#BF5A2E"/>
+                    </svg>
+                    <div>
+                        <span class="text-lg md:text-2xl font-display font-bold tracking-tight text-[#1E1A17] dark:text-cream">
+                            CLOUD<span class="text-primary">KITCHEN</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Toggle Buttons Only -->
+                <div class="flex items-center gap-3">
+                    <button id="theme-toggle" class="toggle-btn" title="Dark / Light">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:inline"></i>
+                    </button>
+                    <button id="rtl-toggle" class="toggle-btn" title="RTL / LTR">
+                        ⇄
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== 404 MAIN CONTENT ========== -->
+    <div class="min-h-screen flex items-center justify-center pt-32 pb-20 px-6">
+        <div class="max-w-2xl mx-auto text-center animate-fade-in-up">
+            <!-- Animated Icon -->
+            <div class="mb-6 floating-scoop">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-full border-8 border-primary/30 flex items-center justify-center mx-auto relative">
+                    <i class="fas fa-utensils text-primary text-5xl md:text-6xl animate-spin-slow"></i>
+                    <div class="absolute inset-0 rounded-full border-4 border-primary/20 animate-ping opacity-75"></div>
+                </div>
+            </div>
+
+            <!-- Large 404 Number -->
+            <div class="mb-4">
+                <span class="text-[120px] md:text-[180px] font-display font-extrabold text-primary leading-none tracking-tighter drop-shadow-lg">404</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-2xl md:text-3xl font-display font-bold text-[#1E1A17] dark:text-cream mb-3">
+                Oops! This Dish Is Off the Menu
+            </h1>
+
+            <!-- Divider -->
+            <div class="scoop-line"></div>
+
+            <!-- Message -->
+            <p class="text-base md:text-lg text-[#1E1A17] dark:text-gray-300 mb-8 leading-relaxed max-w-md mx-auto">
+                The page you're looking for has been moved, renamed, or never existed. Let's get you back to building your food brand.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap gap-4 justify-center mb-12">
+                <a href="index.html" class="btn-primary">
+                    <i class="fas fa-home mr-1"></i> Back to Home
+                </a>
+                <a href="brands.html" class="btn-secondary">
+                    <i class="fas fa-store mr-1"></i> Explore Brands
+                </a>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="border-t border-primary/20 pt-8">
+                <p class="text-sm text-[#1E1A17] dark:text-gray-400 mb-4">
+                    <i class="fas fa-compass text-primary mr-2"></i> Quick Navigation
+                </p>
+                <div class="flex flex-wrap gap-3 justify-center">
+                    <a href="about.html" class="text-sm font-semibold text-[#1E1A17] dark:text-gray-300 hover:text-primary transition">About</a>
+                    <span class="text-primary/40">•</span>
+                    <a href="brands.html" class="text-sm font-semibold text-[#1E1A17] dark:text-gray-300 hover:text-primary transition">Our Brands</a>
+                    <span class="text-primary/40">•</span>
+                    <a href="restaurateurs.html" class="text-sm font-semibold text-[#1E1A17] dark:text-gray-300 hover:text-primary transition">For Restaurateurs</a>
+                    <span class="text-primary/40">•</span>
+                    <a href="locations.html" class="text-sm font-semibold text-[#1E1A17] dark:text-gray-300 hover:text-primary transition">Locations</a>
+                    <span class="text-primary/40">•</span>
+                    <a href="contact.html" class="text-sm font-semibold text-[#1E1A17] dark:text-gray-300 hover:text-primary transition">Contact</a>
+                </div>
+            </div>
+
+            <!-- Fun Fact Note -->
+            <div class="mt-8 text-xs text-[#1E1A17]/60 dark:text-gray-500">
+                <i class="fas fa-smile-wink mr-1"></i> Pro tip: The best food brands are always just around the corner.
+            </div>
+        </div>
+    </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Theme Toggle
+    const themeBtns = document.querySelectorAll('#theme-toggle, #mobile-theme-toggle');
+    themeBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+      });
+    });
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+
+    // 2. RTL Toggle
+    function setRTL(isRTL) {
+      const html = document.documentElement;
+      if (isRTL === 'rtl' || isRTL === true) {
+        html.setAttribute('dir', 'rtl');
+        localStorage.setItem('dir', 'rtl');
+      } else {
+        html.setAttribute('dir', 'ltr');
+        localStorage.setItem('dir', 'ltr');
+      }
+    }
+    if (localStorage.getItem('dir') === 'rtl') setRTL(true);
+
+    const rtlBtn = document.getElementById('rtl-toggle');
+    if (rtlBtn) {
+      rtlBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const currentDir = document.documentElement.getAttribute('dir');
+        setRTL(currentDir === 'rtl' ? 'ltr' : 'rtl');
+      });
+    }
+
+    const mobileRtlBtn = document.getElementById('mobile-rtl-toggle');
+    if (mobileRtlBtn) {
+      mobileRtlBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const currentDir = document.documentElement.getAttribute('dir');
+        setRTL(currentDir === 'rtl' ? 'ltr' : 'rtl');
+      });
+    }
+
+    // 3. Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileToggle && mobileMenu) {
+      mobileToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+      });
+    }
+
+    // 4. Dynamic Active Link Highlighting
+    (function highlightActiveLinks() {
+      let currentPath = window.location.pathname.split('/').pop() || 'index.html';
+      if (!currentPath || currentPath === '/') currentPath = 'index.html';
+
+      document.querySelectorAll('.nav-link, .dropdown-item, .mobile-menu-studio a').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href !== '#' && !href.startsWith('#')) {
+          const linkPage = href.split('/').pop();
+          if (linkPage === currentPath) {
+            link.classList.add('text-primary', 'font-bold', 'active');
+            if (link.classList.contains('dropdown-item')) {
+              link.classList.add('bg-primary/10', 'dark:bg-primary/20');
+            }
+            const parentDrop = link.closest('.dropdown-studio');
+            if (parentDrop) {
+              const dropBtn = parentDrop.querySelector('button');
+              if (dropBtn) dropBtn.classList.add('text-primary', 'font-bold', 'active');
+            }
+          }
+        }
+      });
+    })();
+  });
+</script>
+</body>
+</html>
