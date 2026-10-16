@@ -91,42 +91,42 @@
     /* cards & buttons */
     .card-design {
       background: #FFFFFF;
-      border-radius: 28px;
+      border-radius: 24px;
       transition: all 0.3s ease;
       border: 1px solid #E5D9D0;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
-    .dark .card-design { background: #2A2420; border-color: #3D352E; }
+    .dark .card-design { background: #25201C; border-color: #3D352E; }
     .card-design:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 30px -8px rgba(217,108,58,0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(217,108,58,0.14);
       border-color: #D96C3A;
     }
     .btn-primary-design {
-      background-color: #1E1A17;
-      color: #FCF8F5;
-      font-weight: 600;
-      border-radius: 60px;
+      background-color: #D96C3A;
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 9999px;
       transition: all 0.3s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 14px rgba(217,108,58,0.35);
     }
     .btn-primary-design:hover {
-      background-color: #3D352E;
+      background-color: #BF5A2E;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(217,108,58,0.3);
-      color: #FCF8F5;
+      box-shadow: 0 8px 24px rgba(217,108,58,0.5);
+      color: #FFFFFF;
     }
-    .dark .btn-primary-design { background-color: #FCF8F5; color: #1E1A17; }
-    .dark .btn-primary-design:hover { background-color: #F2E3DB; color: #1E1A17; }
+    .dark .btn-primary-design { background-color: #D96C3A; color: #FFFFFF; }
+    .dark .btn-primary-design:hover { background-color: #BF5A2E; color: #FFFFFF; }
     .btn-outline-design {
-      border: 1.5px solid #1E1A17;
+      border: 2px solid #1E1A17;
       color: #1E1A17;
       background: transparent;
-      border-radius: 60px;
-      font-weight: 500;
+      border-radius: 9999px;
+      font-weight: 600;
       transition: all 0.3s;
     }
-    .btn-outline-design:hover { background-color: #1E1A17; color: #FCF8F5; transform: translateY(-2px); }
+    .btn-outline-design:hover { background-color: #1E1A17; color: #FFFFFF; transform: translateY(-2px); }
     .dark .btn-outline-design { border-color: #EDE6E0; color: #EDE6E0; }
     .dark .btn-outline-design:hover { background-color: #EDE6E0; color: #1E1A17; }
     /* navigation */
@@ -555,39 +555,71 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         <!-- Benefit 1 -->
-        <div class="benefit-card card-design p-7">
-          <div class="benefit-icon w-14 h-14 rounded-2xl bg-[#FCE8DF] dark:bg-[#2A2420] flex items-center justify-center text-xl text-[#D96C3A] mb-5">
-            <i class="fas fa-wallet"></i>
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] shadow-lg overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/commercial-cloud-kitchen.jpg" alt="No Real Estate Risk Commercial Kitchen" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Capital Efficiency</span>
           </div>
-          <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">No Real Estate Risk</h3>
-          <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">No lease, no renovation, no front-of-house staff. Keep your capital for ingredients and growth.</p>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Zero Real Estate Debt</h3>
+              <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">No lease liabilities, no expensive HVAC buildouts, and no front-of-house staff payroll to manage.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#E5D9D0]/60 dark:border-[#3D352E]/60 text-xs font-semibold text-[#D96C3A]">
+              Save $180K+ in Upfront CapEx
+            </div>
+          </div>
         </div>
 
         <!-- Benefit 2 -->
-        <div class="benefit-card card-design p-7">
-          <div class="benefit-icon w-14 h-14 rounded-2xl bg-[#FCE8DF] dark:bg-[#2A2420] flex items-center justify-center text-xl text-[#D96C3A] mb-5">
-            <i class="fas fa-bolt"></i>
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] shadow-lg overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/step-concept-workshop.jpg" alt="Launch in 14 Days" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Speed to Market</span>
           </div>
-          <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Launch in 14 Days</h3>
-          <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Our proven incubation sprint gets you from idea to first order in two weeks — not six months.</p>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Launch in 14 Days</h3>
+              <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Our structured culinary sprint takes you from recipe testing to live delivery orders on DoorDash in 2 weeks.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#E5D9D0]/60 dark:border-[#3D352E]/60 text-xs font-semibold text-[#D96C3A]">
+              Fastest Path to Cashflow
+            </div>
+          </div>
         </div>
 
         <!-- Benefit 3 -->
-        <div class="benefit-card card-design p-7">
-          <div class="benefit-icon w-14 h-14 rounded-2xl bg-[#FCE8DF] dark:bg-[#2A2420] flex items-center justify-center text-xl text-[#D96C3A] mb-5">
-            <i class="fas fa-layer-group"></i>
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] shadow-lg overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/img-38.jpg" alt="Multi-Brand Potential" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">High Throughput</span>
           </div>
-          <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Multi-Brand Potential</h3>
-          <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Run multiple virtual brands from one kitchen. Shared costs, diversified revenue streams.</p>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Multi-Brand Scalability</h3>
+              <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Operate 2 to 3 virtual menus from one cookline station. Shared prep labor and diversified daily revenue.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#E5D9D0]/60 dark:border-[#3D352E]/60 text-xs font-semibold text-[#D96C3A]">
+              Up to 3x Sales per Station
+            </div>
+          </div>
         </div>
 
         <!-- Benefit 4 -->
-        <div class="benefit-card card-design p-7">
-          <div class="benefit-icon w-14 h-14 rounded-2xl bg-[#FCE8DF] dark:bg-[#2A2420] flex items-center justify-center text-xl text-[#D96C3A] mb-5">
-            <i class="fas fa-chart-pie"></i>
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] shadow-lg overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 flex flex-col">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/step-platform-setup.jpg" alt="Data-Driven Growth" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">AI Tech Stack</span>
           </div>
-          <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Data-Driven Growth</h3>
-          <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Real-time dashboards on orders, ratings, and customer behavior. Optimize with confidence.</p>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Algorithmic Growth</h3>
+              <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Real-time order routing, heat-mapped local marketing, and automated aggregator ranking optimization.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[#E5D9D0]/60 dark:border-[#3D352E]/60 text-xs font-semibold text-[#D96C3A]">
+              Top 5% Placement on Apps
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -710,7 +742,7 @@
 
         <!-- Right: image stack -->
         <div class="image-stack relative">
-          <img src="assets/img-14.jpg" alt="Restaurant Profit" class="relative z-10 w-full h-[420px] object-cover rounded-[24px] shadow-2xl" />
+          <img src="assets/step-brand-packaging.jpg" alt="Profitable Virtual Food Brands" class="relative z-10 w-full h-[420px] object-cover rounded-[24px] shadow-2xl" />
           <!-- Floating stat -->
           <div class="absolute bottom-6 left-6 z-20 floating-badge rounded-2xl px-5 py-4 shadow-xl border border-[#E5D9D0] dark:border-[#3D352E]">
             <div class="text-xs text-[#7A6E64] dark:text-[#9E8F84] uppercase tracking-wider mb-1">Average Partner ROI</div>
@@ -911,25 +943,65 @@
     </div>
   </section>
 
-  <!-- ======== CTA (Bold, full-width) ======== -->
-  <section class="py-20 bg-[#D96C3A] relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle, #1E1A17 1.5px, transparent 1.5px); background-size: 30px 30px;"></div>
+  <!-- ======== CTA (Modern Split Visual Hero) ======== -->
+  <section class="py-24 bg-[#1E1A17] relative overflow-hidden text-white">
+    <div class="absolute inset-0 opacity-25">
+      <img src="assets/img-46.jpg" alt="Commercial Kitchen Facility" class="w-full h-full object-cover">
     </div>
-    <div class="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10 text-center">
-      <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
-        Ready to <span class="text-[#1E1A17]">Launch Your Brand?</span>
-      </h2>
-      <p class="text-white/80 text-lg max-w-2xl mx-auto mb-10">
-        Join 40+ successful food entrepreneurs who launched with CloudKitchen. Applications reviewed within 48 hours.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#apply" class="px-10 py-4 bg-[#1E1A17] text-white rounded-full font-bold inline-flex items-center justify-center gap-2 shadow-xl hover:bg-[#2D241E] transition transform hover:-translate-y-1">
-          <i class="fas fa-paper-plane"></i> Apply Now
-        </a>
-        <a href="contact.html" class="px-10 py-4 bg-white/20 backdrop-blur text-white border-2 border-white/40 rounded-full font-bold inline-flex items-center justify-center gap-2 hover:bg-white/30 transition">
-          <i class="fas fa-calendar-check"></i> Book a Call
-        </a>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1E1A17] via-[#1E1A17]/90 to-transparent"></div>
+    
+    <div class="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10 max-w-6xl">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <span class="inline-block bg-[#D96C3A]/30 border border-[#D96C3A]/50 text-[#FCE8DF] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+            For Chefs & Restaurant Operators
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+            Ready to Build Your <span class="text-[#D96C3A]">Virtual Food Empire?</span>
+          </h2>
+          <p class="text-[#CEC3BA] text-lg max-w-xl mb-8 leading-relaxed">
+            Join 40+ profitable culinary entrepreneurs scaling across our national kitchen network. Proposals evaluated within 48 hours.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#apply" class="px-8 py-4 bg-[#D96C3A] hover:bg-[#BF5A2E] text-white font-bold rounded-full shadow-lg shadow-[#D96C3A]/40 inline-flex items-center justify-center gap-2 text-base transition-all transform hover:-translate-y-0.5">
+              <i class="fas fa-paper-plane"></i> Submit Brand Application
+            </a>
+            <a href="contact.html" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border-2 border-white/40 rounded-full font-semibold inline-flex items-center justify-center gap-2 text-base transition-all">
+              <i class="fas fa-calendar-alt"></i> Book Discovery Call
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/15 shadow-2xl">
+            <h3 class="font-bold text-xl text-white mb-6 flex items-center gap-2">
+              <i class="fas fa-handshake text-[#D96C3A]"></i> Partnership Commitments
+            </h3>
+            <div class="space-y-5 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#D96C3A] mt-1 text-base"></i>
+                <div>
+                  <h4 class="font-bold text-white">100% Brand Ownership</h4>
+                  <p class="text-white/70 text-xs mt-0.5">You retain all recipes, trademarks, and customer brand equity.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#D96C3A] mt-1 text-base"></i>
+                <div>
+                  <h4 class="font-bold text-white">Month-to-Month Flexibility</h4>
+                  <p class="text-white/70 text-xs mt-0.5">No 5-year lease traps. Exit or pause with 30-day notice.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#D96C3A] mt-1 text-base"></i>
+                <div>
+                  <h4 class="font-bold text-white">Cross-Trained Kitchen Crews</h4>
+                  <p class="text-white/70 text-xs mt-0.5">Line cooks execute your recipe cards with precision.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

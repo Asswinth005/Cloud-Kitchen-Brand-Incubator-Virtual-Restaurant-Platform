@@ -92,42 +92,42 @@
     /* cards & buttons */
     .card-design {
       background: #FFFFFF;
-      border-radius: 28px;
+      border-radius: 24px;
       transition: all 0.3s ease;
       border: 1px solid #E5D9D0;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
-    .dark .card-design { background: #2A2420; border-color: #3D352E; }
+    .dark .card-design { background: #25201C; border-color: #3D352E; }
     .card-design:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 30px -8px rgba(217,108,58,0.2);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(217,108,58,0.14);
       border-color: #D96C3A;
     }
     .btn-primary-design {
-      background-color: #1E1A17;
-      color: #FCF8F5;
-      font-weight: 600;
-      border-radius: 60px;
+      background-color: #D96C3A;
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 9999px;
       transition: all 0.3s;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      box-shadow: 0 4px 14px rgba(217,108,58,0.35);
     }
     .btn-primary-design:hover {
-      background-color: #3D352E;
+      background-color: #BF5A2E;
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(217,108,58,0.3);
-      color: #FCF8F5;
+      box-shadow: 0 8px 24px rgba(217,108,58,0.5);
+      color: #FFFFFF;
     }
-    .dark .btn-primary-design { background-color: #FCF8F5; color: #1E1A17; }
-    .dark .btn-primary-design:hover { background-color: #F2E3DB; color: #1E1A17; }
+    .dark .btn-primary-design { background-color: #D96C3A; color: #FFFFFF; }
+    .dark .btn-primary-design:hover { background-color: #BF5A2E; color: #FFFFFF; }
     .btn-outline-design {
-      border: 1.5px solid #1E1A17;
+      border: 2px solid #1E1A17;
       color: #1E1A17;
       background: transparent;
-      border-radius: 60px;
-      font-weight: 500;
+      border-radius: 9999px;
+      font-weight: 600;
       transition: all 0.3s;
     }
-    .btn-outline-design:hover { background-color: #1E1A17; color: #FCF8F5; transform: translateY(-2px); }
+    .btn-outline-design:hover { background-color: #1E1A17; color: #FFFFFF; transform: translateY(-2px); }
     .dark .btn-outline-design { border-color: #EDE6E0; color: #EDE6E0; }
     .dark .btn-outline-design:hover { background-color: #EDE6E0; color: #1E1A17; }
     /* navigation */
@@ -477,199 +477,312 @@
     </div>
   </section>
 
-  <!-- ======== SECTION: THE CLOUD KITCHEN ADVANTAGE (Icon grid + centered heading) ======== -->
+  <!-- ======== SECTION: THE CLOUD KITCHEN ADVANTAGE (Photographic Infrastructure Showcase) ======== -->
   <section class="py-24 bg-white dark:bg-[#1A1614]">
-    <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+    <div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
       <div class="max-w-3xl mx-auto text-center mb-16">
         <span class="inline-block bg-[#FCE8DF] dark:bg-[#2A2420] text-[#1E1A17] dark:text-white px-5 py-1.5 rounded-full text-sm font-semibold tracking-wide mb-5">
-          <i class="fas fa-gem text-[#D96C3A]"></i> The Advantage
+          <i class="fas fa-layer-group text-[#D96C3A]"></i> The Cloud Kitchen Advantage
         </span>
         <h2 class="text-3xl md:text-5xl font-display font-bold text-[#1E1A17] dark:text-white leading-tight">
-          Why Food Entrepreneurs <span class="text-[#D96C3A]">Choose Us</span>
+          Why Food Innovators <span class="text-[#D96C3A]">Scale With Us</span>
         </h2>
-        <p class="text-[#3D352E] dark:text-[#CEC3BA] mt-4 text-lg">Everything you need to build a profitable food brand — without the traditional overhead.</p>
+        <p class="text-[#3D352E] dark:text-[#CEC3BA] mt-4 text-lg">We engineer every element of commercial kitchen infrastructure and delivery tech so you can launch high-margin virtual brands without real estate debt.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <!-- Advantage 1 -->
-        <div class="card-design p-8 group">
-          <div class="w-14 h-14 rounded-2xl bg-[#D96C3A] flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-[#D96C3A]/30 group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-wallet"></i>
+      <!-- Feature Split Highlight -->
+      <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-xl mb-12">
+        <div class="grid lg:grid-cols-12 gap-0 items-center">
+          <div class="lg:col-span-7 relative h-72 sm:h-96 lg:h-full min-h-[360px] overflow-hidden">
+            <img src="assets/img-5.jpg" alt="Commercial Cloud Kitchen Operations" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-6 left-6 right-6 text-white">
+              <span class="px-3 py-1 bg-[#D96C3A] text-white text-xs font-bold rounded-full uppercase tracking-wider mb-2 inline-block">Flagship Hub</span>
+              <h3 class="text-2xl font-bold">Industrial Grade Cooklines & Smart Exhaust</h3>
+              <p class="text-white/80 text-sm mt-1">High-BTU Vulcan ranges, Pitco fryers, and continuous ANSUL fire protection certified for commercial delivery volumes.</p>
+            </div>
           </div>
-          <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-3">Zero Real Estate Risk</h3>
-          <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">No leases, no renovation, no front-of-house staff. Keep your capital for what matters — great food.</p>
+          <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-bold text-[#D96C3A] uppercase tracking-widest">Built For Delivery Speed</span>
+              <h3 class="text-2xl font-bold text-[#1E1A17] dark:text-white mt-1 mb-4">Zero Storefront Overhead</h3>
+              <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed mb-6">
+                Traditional restaurants waste 60% of their square footage on dining rooms, hosts, and storefront rent. Our cloud kitchens dedicate 100% of space to rapid order preparation.
+              </p>
+            </div>
+            <div class="space-y-4 pt-4 border-t border-[#E5D9D0] dark:border-[#3D352E]">
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[#D96C3A]/15 text-[#D96C3A] flex items-center justify-center font-bold text-sm">
+                  <i class="fas fa-check"></i>
+                </div>
+                <span class="text-sm font-semibold text-[#1E1A17] dark:text-white">Save $180,000+ in initial buildout costs</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[#D96C3A]/15 text-[#D96C3A] flex items-center justify-center font-bold text-sm">
+                  <i class="fas fa-check"></i>
+                </div>
+                <span class="text-sm font-semibold text-[#1E1A17] dark:text-white">14-Day launch vs 9-12 months for brick & mortar</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-[#D96C3A]/15 text-[#D96C3A] flex items-center justify-center font-bold text-sm">
+                  <i class="fas fa-check"></i>
+                </div>
+                <span class="text-sm font-semibold text-[#1E1A17] dark:text-white">Run up to 3 virtual brands from 1 cookline</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Advantage 2 -->
-        <div class="card-design p-8 group">
-          <div class="w-14 h-14 rounded-2xl bg-[#D96C3A] flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-[#D96C3A]/30 group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-mobile-alt"></i>
+      </div>
+
+      <!-- 4 Photographic Pillar Cards -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-2xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/commercial-cloud-kitchen.jpg" alt="Commercial Equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold uppercase tracking-wider">Infrastructure</span>
           </div>
-          <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-3">Delivery-First Technology</h3>
-          <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Native integrations with UberEats, DoorDash, and Grubhub. Real-time order sync and menu management.</p>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Turnkey Stations</h4>
+              <p class="text-xs text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Dedicated stainless prep stations, high-capacity grease traps, and cold storage.</p>
+            </div>
+            <span class="text-xs font-semibold text-[#D96C3A] mt-4 inline-block">FDA & Health Compliant</span>
+          </div>
         </div>
-        <!-- Advantage 3 -->
-        <div class="card-design p-8 group">
-          <div class="w-14 h-14 rounded-2xl bg-[#D96C3A] flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-[#D96C3A]/30 group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-people-arrows"></i>
+
+        <!-- Card 2 -->
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-2xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/studio-food-styling.jpg" alt="Culinary R&D Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold uppercase tracking-wider">Incubation</span>
           </div>
-          <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-3">Multi-Brand Operations</h3>
-          <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Run 3, 5, or 10 virtual brands from one kitchen. Shared labor, shared rent, diversified revenue.</p>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Culinary Brand Lab</h4>
+              <p class="text-xs text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Recipe engineering, shelf-life and transit testing, and professional menu styling.</p>
+            </div>
+            <span class="text-xs font-semibold text-[#D96C3A] mt-4 inline-block">High-Converting Menus</span>
+          </div>
         </div>
-        <!-- Advantage 4 -->
-        <div class="card-design p-8 group">
-          <div class="w-14 h-14 rounded-2xl bg-[#D96C3A] flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-[#D96C3A]/30 group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-chart-bar"></i>
+
+        <!-- Card 3 -->
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-2xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/step-platform-setup.jpg" alt="Unified KDS System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold uppercase tracking-wider">Technology</span>
           </div>
-          <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-3">Data-Driven Insights</h3>
-          <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Know what sells, when, and to whom. Optimize pricing, portioning, and promotions with real data.</p>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Unified POS / KDS</h4>
+              <p class="text-xs text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">One master tablet connects DoorDash, Uber Eats, and Grubhub without ticket confusion.</p>
+            </div>
+            <span class="text-xs font-semibold text-[#D96C3A] mt-4 inline-block">99.8% Order Accuracy</span>
+          </div>
         </div>
-        <!-- Advantage 5 -->
-        <div class="card-design p-8 group">
-          <div class="w-14 h-14 rounded-2xl bg-[#D96C3A] flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-[#D96C3A]/30 group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-users-cog"></i>
+
+        <!-- Card 4 -->
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-2xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+          <div class="h-44 overflow-hidden relative">
+            <img src="assets/step-live-launch.jpg" alt="Automated Driver Dispatch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+            <span class="absolute bottom-3 left-3 text-white text-xs font-bold uppercase tracking-wider">Logistics</span>
           </div>
-          <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-3">Trained Kitchen Staff</h3>
-          <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Access our vetted team of line cooks, prep specialists, and expediters — no hiring headaches.</p>
-        </div>
-        <!-- Advantage 6 -->
-        <div class="card-design p-8 group">
-          <div class="w-14 h-14 rounded-2xl bg-[#D96C3A] flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-[#D96C3A]/30 group-hover:scale-110 transition-transform duration-300">
-            <i class="fas fa-rocket"></i>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h4 class="font-bold text-lg text-[#1E1A17] dark:text-white mb-2">Express Courier Hub</h4>
+              <p class="text-xs text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Dedicated front counter expedites courier handoffs in under 90 seconds.</p>
+            </div>
+            <span class="text-xs font-semibold text-[#D96C3A] mt-4 inline-block">Faster Hot Deliveries</span>
           </div>
-          <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-3">Rapid Scaling</h3>
-          <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Once you prove the concept in one kitchen, expand to our other locations with the same menu and brand.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======== SECTION: HOW IT WORKS (Vertical timeline - new design) ======== -->
-  <section id="how-it-works" class="py-24 bg-[#F8F0EB] dark:bg-[#25201C] border-t border-[#E5D9D0] dark:border-[#3D352E]">
-    <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+  <!-- ======== SECTION: HOW IT WORKS (Photographic 14-Day Vertical Roadmap) ======== -->
+  <section id="how-it-works" class="py-24 bg-[#F8F0EB] dark:bg-[#1f1a17] border-t border-[#E5D9D0] dark:border-[#3D352E]">
+    <div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-5xl">
       <div class="max-w-3xl mx-auto text-center mb-16">
         <span class="inline-block bg-white dark:bg-[#2A2420] text-[#1E1A17] dark:text-white px-5 py-1.5 rounded-full text-sm font-semibold tracking-wide border border-[#E5D9D0] dark:border-[#3D352E] mb-5">
-          <i class="fas fa-route text-[#D96C3A]"></i> How It Works
+          <i class="fas fa-route text-[#D96C3A]"></i> The 14-Day Roadmap
         </span>
         <h2 class="text-3xl md:text-5xl font-display font-bold text-[#1E1A17] dark:text-white leading-tight">
-          From Idea to <span class="text-[#D96C3A]">First Order</span> in 14 Days
+          From Concept to <span class="text-[#D96C3A]">First 100 Orders</span>
         </h2>
+        <p class="text-[#3D352E] dark:text-[#CEC3BA] mt-3 text-base md:text-lg">Our proven 4-stage incubation sprint takes you from recipe ideas to profitable operations.</p>
       </div>
 
-      <div class="max-w-3xl mx-auto">
-        <!-- Timeline step 1 -->
-        <div class="flex gap-6 md:gap-8 items-start mb-10 relative">
-          <div class="flex flex-col items-center shrink-0">
-            <div class="w-16 h-16 rounded-full bg-[#D96C3A] flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-[#D96C3A]/30 z-10">1</div>
-            <div class="w-0.5 h-full bg-[#E5D9D0] dark:bg-[#3D352E] mt-2"></div>
+      <div class="space-y-6">
+        <!-- Step 1 -->
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 group hover:border-[#D96C3A] transition">
+          <div class="w-full sm:w-44 h-36 rounded-2xl overflow-hidden shrink-0 relative">
+            <img src="assets/step-concept-workshop.jpg" alt="Chef Tasting & Concept Review" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-[#D96C3A] text-white font-bold text-[11px] uppercase">Days 1-3</span>
           </div>
-          <div class="card-design p-6 flex-1 -mt-2">
-            <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-2">Apply & Concept Review</h3>
-            <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Tell us about your food concept, target audience, and menu ideas. Our culinary team reviews your application within 48 hours.</p>
-          </div>
-        </div>
-        <!-- Timeline step 2 -->
-        <div class="flex gap-6 md:gap-8 items-start mb-10 relative">
-          <div class="flex flex-col items-center shrink-0">
-            <div class="w-16 h-16 rounded-full bg-[#D96C3A] flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-[#D96C3A]/30 z-10">2</div>
-            <div class="w-0.5 h-full bg-[#E5D9D0] dark:bg-[#3D352E] mt-2"></div>
-          </div>
-          <div class="card-design p-6 flex-1 -mt-2">
-            <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-2">Brand & Menu Incubation</h3>
-            <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">We refine your brand identity, packaging, and menu pricing. Our team helps you create dishes that travel well and maintain quality.</p>
+          <div class="flex-1 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-between mb-2">
+              <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white">Stage 01: Concept Audit & Tasting Review</h3>
+              <span class="hidden sm:inline-block text-xs font-bold text-[#D96C3A] bg-[#FCE8DF] dark:bg-[#2A2420] px-3 py-1 rounded-full">Tasting Session</span>
+            </div>
+            <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Our culinary directors evaluate recipe yields, prep complexity, food costs, and supply chain availability to lock in a high-margin, scalable menu.</p>
           </div>
         </div>
-        <!-- Timeline step 3 -->
-        <div class="flex gap-6 md:gap-8 items-start mb-10 relative">
-          <div class="flex flex-col items-center shrink-0">
-            <div class="w-16 h-16 rounded-full bg-[#D96C3A] flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-[#D96C3A]/30 z-10">3</div>
-            <div class="w-0.5 h-full bg-[#E5D9D0] dark:bg-[#3D352E] mt-2"></div>
+
+        <!-- Step 2 -->
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 group hover:border-[#D96C3A] transition">
+          <div class="w-full sm:w-44 h-36 rounded-2xl overflow-hidden shrink-0 relative">
+            <img src="assets/step-brand-packaging.jpg" alt="Brand Identity & Packaging" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-[#D96C3A] text-white font-bold text-[11px] uppercase">Days 4-7</span>
           </div>
-          <div class="card-design p-6 flex-1 -mt-2">
-            <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-2">Kitchen Setup & Training</h3>
-            <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">We allocate kitchen space, set up your station, and train our staff on your recipes. You approve every detail before launch.</p>
+          <div class="flex-1 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-between mb-2">
+              <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white">Stage 02: Brand Identity & Thermal Packaging</h3>
+              <span class="hidden sm:inline-block text-xs font-bold text-[#D96C3A] bg-[#FCE8DF] dark:bg-[#2A2420] px-3 py-1 rounded-full">Asset Delivery</span>
+            </div>
+            <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">We design your virtual storefront logo, menu layout, photo assets, and select vented insulated packaging that keeps food steaming hot upon doorstep arrival.</p>
           </div>
         </div>
-        <!-- Timeline step 4 -->
-        <div class="flex gap-6 md:gap-8 items-start relative">
-          <div class="flex flex-col items-center shrink-0">
-            <div class="w-16 h-16 rounded-full bg-[#D96C3A] flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-[#D96C3A]/30 z-10">4</div>
+
+        <!-- Step 3 -->
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 group hover:border-[#D96C3A] transition">
+          <div class="w-full sm:w-44 h-36 rounded-2xl overflow-hidden shrink-0 relative">
+            <img src="assets/commercial-cloud-kitchen.jpg" alt="Kitchen Station Prep & Training" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-[#D96C3A] text-white font-bold text-[11px] uppercase">Days 8-11</span>
           </div>
-          <div class="card-design p-6 flex-1 -mt-2">
-            <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white mb-2">Launch & Scale</h3>
-            <p class="text-[#3D352E] dark:text-[#CEC3BA] text-sm leading-relaxed">Go live on all delivery platforms. Monitor orders in real-time, gather feedback, and expand to new locations as you grow.</p>
+          <div class="flex-1 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-between mb-2">
+              <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white">Stage 03: Kitchen Station Setup & SOP Training</h3>
+              <span class="hidden sm:inline-block text-xs font-bold text-[#D96C3A] bg-[#FCE8DF] dark:bg-[#2A2420] px-3 py-1 rounded-full">Line Certification</span>
+            </div>
+            <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">We configure your dedicated cookline station, connect POS aggregator hardware, and cross-train kitchen personnel on your recipe cards and plating standards.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden shadow-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-6 group hover:border-[#D96C3A] transition">
+          <div class="w-full sm:w-44 h-36 rounded-2xl overflow-hidden shrink-0 relative">
+            <img src="assets/step-platform-setup.jpg" alt="Aggregator Go Live" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-[#D96C3A] text-white font-bold text-[11px] uppercase">Days 12-14</span>
+          </div>
+          <div class="flex-1 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-between mb-2">
+              <h3 class="font-bold text-xl text-[#1E1A17] dark:text-white">Stage 04: Live Launch & Algorithmic Scale</h3>
+              <span class="hidden sm:inline-block text-xs font-bold text-[#D96C3A] bg-[#FCE8DF] dark:bg-[#2A2420] px-3 py-1 rounded-full">Go Live</span>
+            </div>
+            <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] leading-relaxed">Storefronts go live on DoorDash, Uber Eats, and Grubhub with promotional campaign boosts to capture immediate local delivery demand.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======== SECTION: FEATURED BRANDS (Horizontal scroll style) ======== -->
+  <!-- ======== SECTION: FEATURED BRANDS (High-Contrast Food Showcase) ======== -->
   <section class="py-24 bg-white dark:bg-[#1A1614]">
-    <div class="container mx-auto px-6 sm:px-8 lg:px-12">
+    <div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
       <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
         <div>
           <span class="inline-block bg-[#FCE8DF] dark:bg-[#2A2420] text-[#1E1A17] dark:text-white px-5 py-1.5 rounded-full text-sm font-semibold tracking-wide mb-4">
-            <i class="fas fa-star text-[#D96C3A]"></i> Success Stories
+            <i class="fas fa-trophy text-[#D96C3A]"></i> Incubator Portfolio
           </span>
           <h2 class="text-3xl md:text-4xl font-display font-bold text-[#1E1A17] dark:text-white">
-            Brands Thriving on <span class="text-[#D96C3A]">Our Platform</span>
+            Virtual Brands <span class="text-[#D96C3A]">Built For Delivery</span>
           </h2>
+          <p class="text-sm text-[#3D352E] dark:text-[#CEC3BA] mt-2">Active brands created by independent chefs and scaled across our kitchen network.</p>
         </div>
-        <a href="brands.html" class="btn-outline-design px-6 py-2.5 rounded-full font-semibold inline-flex items-center gap-2 text-sm whitespace-nowrap self-start md:self-auto">
-          View all brands <i class="fas fa-arrow-right"></i>
+        <a href="brands.html" class="px-6 py-2.5 rounded-full font-bold inline-flex items-center gap-2 text-sm whitespace-nowrap bg-[#1E1A17] text-white hover:bg-[#3D352E] dark:bg-white dark:text-[#1E1A17] transition">
+          View All Brands <i class="fas fa-arrow-right"></i>
         </a>
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Brand card 1 -->
-        <div class="brand-pill card-design overflow-hidden group">
-          <div class="h-48 overflow-hidden bg-[#E5D9D0]">
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 shadow-md">
+          <div class="h-52 overflow-hidden relative">
             <img src="assets/img-43.jpg" alt="Tandoor Trail" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Indian Gourmet</span>
+            <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">+210% YoY</span>
           </div>
           <div class="p-5">
-            <span class="text-[10px] font-semibold text-[#D96C3A] uppercase tracking-wider">Indian</span>
-            <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mt-1">Tandoor Trail</h3>
-            <div class="flex items-center gap-1 mt-2 text-xs text-[#7A6E64] dark:text-[#9E8F84]">
-              <i class="fas fa-star text-[#D96C3A]"></i> 4.9 · 2.1k orders
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white">Tandoor Trail</h3>
+              <div class="flex items-center gap-1 text-xs font-bold text-[#1E1A17] dark:text-white">
+                <i class="fas fa-star text-amber-500"></i> 4.9
+              </div>
+            </div>
+            <p class="text-xs text-[#7A6E64] dark:text-[#9E8F84] mb-3">Slow-charred kebabs and layered biryanis packaged in heat-retaining clay pots.</p>
+            <div class="pt-3 border-t border-[#E5D9D0] dark:border-[#3D352E] flex items-center justify-between text-xs text-[#3D352E] dark:text-[#CEC3BA]">
+              <span><i class="fas fa-clock text-[#D96C3A] mr-1"></i> 14 min prep</span>
+              <span><i class="fas fa-map-marker-alt text-[#D96C3A] mr-1"></i> 4 Hubs</span>
             </div>
           </div>
         </div>
+
         <!-- Brand card 2 -->
-        <div class="brand-pill card-design overflow-hidden group">
-          <div class="h-48 overflow-hidden bg-[#E5D9D0]">
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 shadow-md">
+          <div class="h-52 overflow-hidden relative">
             <img src="assets/img-39.jpg" alt="Umami Bowl" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Japanese Ramen</span>
+            <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">+184% YoY</span>
           </div>
           <div class="p-5">
-            <span class="text-[10px] font-semibold text-[#D96C3A] uppercase tracking-wider">Asian Fusion</span>
-            <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mt-1">Umami Bowl</h3>
-            <div class="flex items-center gap-1 mt-2 text-xs text-[#7A6E64] dark:text-[#9E8F84]">
-              <i class="fas fa-star text-[#D96C3A]"></i> 4.8 · 3.4k orders
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white">Umami Bowl</h3>
+              <div class="flex items-center gap-1 text-xs font-bold text-[#1E1A17] dark:text-white">
+                <i class="fas fa-star text-amber-500"></i> 4.8
+              </div>
+            </div>
+            <p class="text-xs text-[#7A6E64] dark:text-[#9E8F84] mb-3">Split-broth delivery ramen with separate noodle compartments for zero sogginess.</p>
+            <div class="pt-3 border-t border-[#E5D9D0] dark:border-[#3D352E] flex items-center justify-between text-xs text-[#3D352E] dark:text-[#CEC3BA]">
+              <span><i class="fas fa-clock text-[#D96C3A] mr-1"></i> 11 min prep</span>
+              <span><i class="fas fa-map-marker-alt text-[#D96C3A] mr-1"></i> 6 Hubs</span>
             </div>
           </div>
         </div>
+
         <!-- Brand card 3 -->
-        <div class="brand-pill card-design overflow-hidden group">
-          <div class="h-48 overflow-hidden bg-[#E5D9D0]">
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 shadow-md">
+          <div class="h-52 overflow-hidden relative">
             <img src="assets/img-22.jpg" alt="Plant & Pass" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Healthy Bowls</span>
+            <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">+265% YoY</span>
           </div>
           <div class="p-5">
-            <span class="text-[10px] font-semibold text-[#D96C3A] uppercase tracking-wider">Plant-Based</span>
-            <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mt-1">Plant & Pass</h3>
-            <div class="flex items-center gap-1 mt-2 text-xs text-[#7A6E64] dark:text-[#9E8F84]">
-              <i class="fas fa-star text-[#D96C3A]"></i> 4.7 · 1.8k orders
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white">Plant & Pass</h3>
+              <div class="flex items-center gap-1 text-xs font-bold text-[#1E1A17] dark:text-white">
+                <i class="fas fa-star text-amber-500"></i> 4.9
+              </div>
+            </div>
+            <p class="text-xs text-[#7A6E64] dark:text-[#9E8F84] mb-3">High-protein organic grain bowls and cold-pressed citrus dressings.</p>
+            <div class="pt-3 border-t border-[#E5D9D0] dark:border-[#3D352E] flex items-center justify-between text-xs text-[#3D352E] dark:text-[#CEC3BA]">
+              <span><i class="fas fa-clock text-[#D96C3A] mr-1"></i> 8 min prep</span>
+              <span><i class="fas fa-map-marker-alt text-[#D96C3A] mr-1"></i> 5 Hubs</span>
             </div>
           </div>
         </div>
+
         <!-- Brand card 4 -->
-        <div class="brand-pill card-design overflow-hidden group">
-          <div class="h-48 overflow-hidden bg-[#E5D9D0]">
+        <div class="bg-[#FCF8F5] dark:bg-[#25201C] rounded-3xl border border-[#E5D9D0] dark:border-[#3D352E] overflow-hidden group hover:border-[#D96C3A] hover:-translate-y-1 transition-all duration-300 shadow-md">
+          <div class="h-52 overflow-hidden relative">
             <img src="assets/img-36.jpg" alt="Slice Society" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+            <span class="absolute top-3 left-3 bg-[#1E1A17]/80 backdrop-blur-sm text-white text-[11px] font-bold px-2.5 py-1 rounded-full uppercase">Artisan Pizza</span>
+            <span class="absolute bottom-3 right-3 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">+310% YoY</span>
           </div>
           <div class="p-5">
-            <span class="text-[10px] font-semibold text-[#D96C3A] uppercase tracking-wider">Pizza</span>
-            <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white mt-1">Slice Society</h3>
-            <div class="flex items-center gap-1 mt-2 text-xs text-[#7A6E64] dark:text-[#9E8F84]">
-              <i class="fas fa-star text-[#D96C3A]"></i> 4.9 · 5.2k orders
+            <div class="flex items-center justify-between mb-1">
+              <h3 class="font-bold text-lg text-[#1E1A17] dark:text-white">Slice Society</h3>
+              <div class="flex items-center gap-1 text-xs font-bold text-[#1E1A17] dark:text-white">
+                <i class="fas fa-star text-amber-500"></i> 4.9
+              </div>
+            </div>
+            <p class="text-xs text-[#7A6E64] dark:text-[#9E8F84] mb-3">72-hour sourdough Detroit-style pan pizzas delivered in vented steam-shield boxes.</p>
+            <div class="pt-3 border-t border-[#E5D9D0] dark:border-[#3D352E] flex items-center justify-between text-xs text-[#3D352E] dark:text-[#CEC3BA]">
+              <span><i class="fas fa-clock text-[#D96C3A] mr-1"></i> 16 min prep</span>
+              <span><i class="fas fa-map-marker-alt text-[#D96C3A] mr-1"></i> 7 Hubs</span>
             </div>
           </div>
         </div>
@@ -677,48 +790,87 @@
     </div>
   </section>
 
-  <!-- ======== SECTION: TESTIMONIAL (Large quote style) ======== -->
-  <section class="py-24 bg-[#F8F0EB] dark:bg-[#25201C] border-t border-[#E5D9D0] dark:border-[#3D352E]">
+  <!-- ======== SECTION: TESTIMONIAL (Elevated Photo Proof Card) ======== -->
+  <section class="py-24 bg-[#F8F0EB] dark:bg-[#1f1a17] border-t border-[#E5D9D0] dark:border-[#3D352E]">
     <div class="container mx-auto px-6 sm:px-8 lg:px-12 max-w-4xl">
-      <div class="text-center">
-        <div class="w-20 h-20 mx-auto mb-8 kitchen-icon-ring">
-          <div class="w-full h-full rounded-full bg-[#F8F0EB] dark:bg-[#25201C] flex items-center justify-center">
-            <i class="fas fa-quote-left text-2xl text-[#D96C3A]"></i>
-          </div>
+      <div class="bg-white dark:bg-[#25201C] rounded-3xl p-8 sm:p-12 border border-[#E5D9D0] dark:border-[#3D352E] shadow-xl text-center relative overflow-hidden">
+        <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-[#D96C3A]/15 text-[#D96C3A] flex items-center justify-center text-2xl font-bold">
+          <i class="fas fa-quote-left"></i>
         </div>
-        <blockquote class="text-2xl md:text-4xl font-display font-bold text-[#1E1A17] dark:text-white leading-snug mb-8">
-          “CloudKitchen turned my home-cooking hobby into a <span class="text-[#D96C3A]">six-figure business</span>. I never imagined I could run three brands from one kitchen.”
+        <blockquote class="text-2xl sm:text-3xl font-display font-bold text-[#1E1A17] dark:text-white leading-snug mb-8 max-w-2xl mx-auto">
+          “CloudKitchen eliminated the $250K brick-and-mortar risk. We launched two virtual brands in two weeks, and hit <span class="text-[#D96C3A]">profitable margins by month two</span>.”
         </blockquote>
-        <div class="flex items-center justify-center gap-4">
-          <img src="assets/img-9.jpg" alt="Chef Maria" class="w-14 h-14 rounded-full object-cover object-top border-2 border-[#D96C3A]" />
-          <div class="text-left">
-            <div class="font-bold text-[#1E1A17] dark:text-white">Chef Maria L.</div>
-            <div class="text-sm text-[#7A6E64] dark:text-[#9E8F84]">Founder, Umami Bowl & Plant & Pass</div>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <img src="assets/img-9.jpg" alt="Chef Maria L." class="w-16 h-16 rounded-full object-cover object-top border-2 border-[#D96C3A] shadow-md" />
+          <div class="text-center sm:text-left">
+            <div class="font-bold text-lg text-[#1E1A17] dark:text-white">Chef Maria Lawrence</div>
+            <div class="text-xs text-[#7A6E64] dark:text-[#9E8F84]">Executive Chef & Co-Founder, Umami Bowl & Plant & Pass</div>
+            <div class="text-xs font-semibold text-[#D96C3A] mt-0.5">Operating from Austin & Dallas Kitchen Hubs</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ======== SECTION: CTA (Bold, full-width) ======== -->
-  <section class="py-20 bg-[#D96C3A] relative overflow-hidden">
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle, #1E1A17 1.5px, transparent 1.5px); background-size: 30px 30px;"></div>
+  <!-- ======== SECTION: CTA (Modern Split Visual Hero) ======== -->
+  <section class="py-24 bg-[#1E1A17] relative overflow-hidden text-white">
+    <div class="absolute inset-0 opacity-25">
+      <img src="assets/img-46.jpg" alt="Cloud Kitchen Facility" class="w-full h-full object-cover">
     </div>
-    <div class="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10 text-center">
-      <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
-        Ready to Build Your <span class="text-[#1E1A17]">Food Empire?</span>
-      </h2>
-      <p class="text-white/80 text-lg max-w-2xl mx-auto mb-10">
-        Join 40+ successful food entrepreneurs who launched with CloudKitchen. Applications reviewed within 48 hours.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="restaurateurs.html" class="px-10 py-4 bg-[#1E1A17] text-white rounded-full font-bold inline-flex items-center justify-center gap-2 shadow-xl hover:bg-[#2D241E] transition transform hover:-translate-y-1">
-          <i class="fas fa-paper-plane"></i> Apply Now
-        </a>
-        <a href="locations.html" class="px-10 py-4 bg-white/20 backdrop-blur text-white border-2 border-white/40 rounded-full font-bold inline-flex items-center justify-center gap-2 hover:bg-white/30 transition">
-          <i class="fas fa-map-marker-alt"></i> Find a Kitchen
-        </a>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#1E1A17] via-[#1E1A17]/90 to-transparent"></div>
+    
+    <div class="container mx-auto px-6 sm:px-8 lg:px-12 relative z-10 max-w-6xl">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <span class="inline-block bg-[#D96C3A]/30 border border-[#D96C3A]/50 text-[#FCE8DF] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+            Scale Without Front-Of-House Rent
+          </span>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-6 leading-tight">
+            Ready to Launch Your Next <span class="text-[#D96C3A]">Delivery Concept?</span>
+          </h2>
+          <p class="text-[#CEC3BA] text-lg max-w-xl mb-8 leading-relaxed">
+            Schedule a kitchen walk-through or submit your menu proposal. Our culinary incubation team responds within 48 hours.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="restaurateurs.html" class="px-8 py-4 bg-[#D96C3A] hover:bg-[#BF5A2E] text-white font-bold rounded-full shadow-lg shadow-[#D96C3A]/40 inline-flex items-center justify-center gap-2 text-base transition-all transform hover:-translate-y-0.5">
+              <i class="fas fa-paper-plane"></i> Apply for Kitchen Station
+            </a>
+            <a href="locations.html" class="px-8 py-4 bg-white/10 hover:bg-white/20 text-white border-2 border-white/40 rounded-full font-semibold inline-flex items-center justify-center gap-2 text-base transition-all">
+              <i class="fas fa-map-marker-alt"></i> Explore Hub Locations
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/15 shadow-2xl">
+            <h3 class="font-bold text-xl text-white mb-6 flex items-center gap-2">
+              <i class="fas fa-check-double text-[#D96C3A]"></i> The CloudKitchen Guarantee
+            </h3>
+            <div class="space-y-5 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#D96C3A] mt-1 text-base"></i>
+                <div>
+                  <h4 class="font-bold text-white">Full Regulatory Clearance</h4>
+                  <p class="text-white/70 text-xs mt-0.5">Operate under our approved master commercial food licenses.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#D96C3A] mt-1 text-base"></i>
+                <div>
+                  <h4 class="font-bold text-white">Zero Capital Leases</h4>
+                  <p class="text-white/70 text-xs mt-0.5">Flexible monthly licenses with no multi-year lock-in.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-[#D96C3A] mt-1 text-base"></i>
+                <div>
+                  <h4 class="font-bold text-white">Algorithmic Growth Team</h4>
+                  <p class="text-white/70 text-xs mt-0.5">Bi-weekly data optimization on delivery radiuses and conversions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
